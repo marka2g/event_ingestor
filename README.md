@@ -1,7 +1,7 @@
 # Event[Ingestor](https://www.ssec.wisc.edu/mcidas/doc/xcd_guide/current/intro-4.html)
 
 ---
-This is a demo repo to simulate an app which will ingest a high-volume user behavior events and aggregate them for use later. The app uses different types of supervision trees to support horizontal scaling.
+This is a demo repo to simulate an app which will ingest a high-volume events that could come from a device, user behavior, machine on a factory floor. From there,  an aggravation or parsing and then persisting to a data store could take place. Currently, this app just outputs to Logger. Different types of supervision trees ar used, notably, a [PartitionSupervisor](https://hexdocs.pm/elixir/PartitionSupervisor.html) is used to support horizontal scaling.
 
 >Parent Supervisor: `Application` Supervisor
 >
