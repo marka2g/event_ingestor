@@ -369,7 +369,7 @@ code {
 <hr>
 <p>This is a demo repo to simulate an app which will ingest a high-volume user behavior events and aggregate them for use later. The app uses different types of supervision trees to support horizontal scaling.</p>
 <blockquote>
-<p>Parent Supervisor: <code>IngestorSupervisor</code></p>
+<p>Parent Supervisor: <code>Application</code> Supervisor</p>
 <p><a href="https://hexdocs.pm/elixir/PartitionSupervisor.html">PartitionSupervisor</a>s: <code>EventIngestorPartitionSupervisor</code>, <code>EventFlusherPartitionSupervisor</code></p>
 <p><a href="https://hexdocs.pm/elixir/GenServer.html">GenServer</a>s: <code>EventIngestor</code>, <code>EventFlusher(Acts like a Cronjob service)</code></p>
 </blockquote>

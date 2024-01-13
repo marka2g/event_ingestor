@@ -3,7 +3,7 @@
 ---
 This is a demo repo to simulate an app which will ingest a high-volume user behavior events and aggregate them for use later. The app uses different types of supervision trees to support horizontal scaling.
 
->Parent Supervisor: `IngestorSupervisor`
+>Parent Supervisor: `Application` Supervisor
 >
 >[PartitionSupervisor](https://hexdocs.pm/elixir/PartitionSupervisor.html)s: `EventIngestorPartitionSupervisor`, `EventFlusherPartitionSupervisor`
 >
